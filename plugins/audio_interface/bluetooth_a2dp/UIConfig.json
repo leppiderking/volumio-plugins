@@ -1,0 +1,88 @@
+ {
+  "page": {
+    "label": "TRANSLATE.BLUETOOTH_CONFIGURATION"
+  },
+  "sections": [
+  	{
+  		"id" : "section_visibility",
+  		"element" : "section",
+  		"label" : "TRANSLATE.BLUETOOTH_VISIBILITY",
+  		"description" : "TRANSLATE.BLUETOOTH_VISIBILITY_DESC",
+  		"content" : [
+  			{
+  				"id" : "visibility_switch",
+  				"element" : "switch",
+  				"description" : "TRANSLATE.BLUETOOTH_VISIBILITY_SWITCH_DESC",
+  				"label" : "TRANSLATE.BLUETOOTH_VISIBILITY_SWITCH_LABEL",
+  				"value" : false
+  			}
+  		]
+  	},
+    {
+      "id":"section_scan",
+      "element":"section",
+      "label": "TRANSLATE.BLUETOOTH_SCAN",
+      "description": "TRANSLATE.BLUETOOTH_SCAN_DESC",
+      "content": [
+        {
+        "id": "btn_scan",
+        "element": "button",
+        "label": "TRANSLATE.BLUETOOTH_SCAN_BTN",
+        "description": "TRANSLATE.BLUETOOTH_SCAN_BTN_DESC",
+        "onClick": {
+            "type":"emit",
+            "data":"connect_device",
+            "message":"updateCheck",
+            "askForConfirm": {"title":"TRANSLATE.BLUETOOTH_CONNECT_CONFIRM", "message":"TRANSLATE.BLUETOOTH_CONNECT_CONFIRM_MSG"}
+          }
+        }   
+      ]
+
+    },
+  	{
+  		"id" : "section_known_devices",
+  		"element" : "section",
+  		"label" : "TRANSLATE.KNOWN_DEVICES",
+  		"description" : "TRANSLATE.KNOWN_DEVICES_DESC",
+  		"content" : [
+  			{
+  				"id": "select_device",
+          "element": "select",
+          "label": "TRANSLATE.BLUETOOTH_SELECT_DEVICE_LBL",
+          "description": "TRANSLATE.BLUETOOTH_SELECT_DESC",
+          "value": {"value": "" ,"label": "TRANSLATE.BLUETOOTH_SELECT_NO_DEVICE"},
+          "options": [
+            {
+              "value": "80:4C",
+              "label": "Nexus 5x"
+            },
+            {
+              "value": "42",
+              "label": "Less Jitter"
+            },
+            {
+              "value": "342",
+              "label": "Jitter"
+            },
+            {
+              "value": "asf",
+              "label": "Focus"
+            }
+          ]
+  			},
+        {
+          "id": "btn_connect",
+          "element": "button",
+          "label": "TRANSLATE.BLUETOOTH_CONNECT_BTN",
+          "description": "TRANSLATE.BLUETOOTH_CONNECT_BTN_DESC",
+          "onClick": {
+            "type":"emit",
+            "data":"connect_device",
+            "message":"updateCheck",
+            "askForConfirm": {"title":"TRANSLATE.BLUETOOTH_CONNECT_CONFIRM", "message":"TRANSLATE.BLUETOOTH_CONNECT_CONFIRM_MSG"}
+          }
+        }
+  		]
+  	}
+  ]
+}

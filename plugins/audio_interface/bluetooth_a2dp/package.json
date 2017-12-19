@@ -1,0 +1,21 @@
+{
+	"name": "bluetooth_a2dp",
+	"version": "1.0.0",
+	"description": "Use your Volumio as Bluetooth speaker.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Leppi",
+	"license": "ISC",
+	"volumio_info": {
+		"prettyName": "Bluetooth A2DP",
+		"icon": "fa-lightbulb-o",
+		"plugin_type": "audio_interface"
+	},
+	"dependencies": {
+		"fs-extra": "^0.28.0",
+		"kew": "^0.7.0",
+		"v-conf": "^1.4.0"
+	}
+}

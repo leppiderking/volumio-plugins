@@ -1,0 +1,21 @@
+{
+  "BLUETOOTH_CONFIGURATION":"Bluetooth A2DP Configuration",
+  "SAVE":"Save",
+  "BLUETOOTH_VISIBILITY":"Visibility",
+  "BLUETOOTH_VISIBILITY_DESC":"Make the device visible for other users.",
+  "BLUETOOTH_VISIBILITY_SWITCH_DESC":"Changing the visibility of the device",
+  "BLUETOOTH_VISIBILITY_SWITCH_LABEL":"Changes the visibility of the device",
+  "KNOWN_DEVICES":"Paired Devices",
+  "KNOWN_DEVICES_DESC":"A list of all Devices that are paired with your Volumio",
+  "BLUETOOTH_SELECT_DEVICE_LBL":"Selected Device",
+  "BLUETOOTH_SELECT_NO_DEVICE":"No Device",
+  "BLUETOOTH_SELECT_DESC":"Select the Device you want to connect.",
+  "BLUETOOTH_SCAN": "Scan",
+  "BLUETOOTH_SCAN_DESC": "Scan for bluetooth devices near you",
+  "BLUETOOTH_SCAN_BTN":"Start Scan",
+  "BLUETOOTH_SCAN_BTN_DESC":"Start the scan process to find devices. This may take some time.",
+  "BLUETOOTH_CONNECT_BTN":"Connect",
+  "BLUETOOTH_CONNECT_BTN_DESC":"Connect to selected device.",
+  "BLUETOOTH_CONNECT_CONFIRM":"Sure?",
+  "BLUETOOTH_CONNECT_CONFIRM_MSG":"Are you Sure to connect to this device."
+}

@@ -1,0 +1,15 @@
+{
+  "enabled": {
+    "type": "boolean",
+    "value": false
+  },
+  "visible": {
+  	"type": "boolean",
+  	"value": true
+  },
+  "controllers":[
+  ]
+  ,
+  "devices": [
+  ]
+}
